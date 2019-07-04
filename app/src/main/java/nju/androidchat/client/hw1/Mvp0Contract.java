@@ -4,7 +4,7 @@ import java.util.List;
 
 import nju.androidchat.client.ClientMessage;
 
-public interface HwContract {
+public interface Mvp0Contract {
     interface View extends BaseView<Presenter> {
         void showMessageList(List<ClientMessage> messages);
     }
