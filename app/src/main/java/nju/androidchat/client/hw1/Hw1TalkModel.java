@@ -1,14 +1,11 @@
 package nju.androidchat.client.hw1;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 import lombok.Setter;
 import lombok.extern.java.Log;
 import nju.androidchat.client.ClientMessage;
-import nju.androidchat.client.mvc0.Mvc0TalkModel;
 import nju.androidchat.client.socket.MessageListener;
 import nju.androidchat.client.socket.SocketClient;
 import nju.androidchat.shared.message.ClientSendMessage;
@@ -18,14 +15,14 @@ import nju.androidchat.shared.message.RecallMessage;
 import nju.androidchat.shared.message.ServerSendMessage;
 
 @Log
-public class Mvp0TalkModel implements MessageListener, Mvp0Contract.Model {
+public class Hw1TalkModel implements MessageListener, Hw1Contract.Model {
 
     private SocketClient client;
 
     @Setter
-    private Mvp0Contract.Presenter iMvp0TalkPresenter;
+    private Hw1Contract.Presenter iMvp0TalkPresenter;
 
-    public Mvp0TalkModel() {
+    public Hw1TalkModel() {
         this.client = SocketClient.getClient();
         // Model本身去注册Socket的消息接受事件
         client.setMessageListener(this);

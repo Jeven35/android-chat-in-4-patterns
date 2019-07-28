@@ -7,10 +7,10 @@ import lombok.Getter;
 import nju.androidchat.client.ClientMessage;
 
 @AllArgsConstructor
-public class Mvp0TalkPresenter implements Mvp0Contract.Presenter {
+public class Hw1TalkPresenter implements Hw1Contract.Presenter {
 
-    private Mvp0Contract.Model mvp0TalkModel;
-    private Mvp0Contract.View iMvp0TalkView;
+    private Hw1Contract.Model mvp0TalkModel;
+    private Hw1Contract.View iMvp0TalkView;
 
     @Getter
     private List<ClientMessage> clientMessages;
