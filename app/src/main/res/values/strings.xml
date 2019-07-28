@@ -29,4 +29,5 @@
     <string name="after_recall_cancel">已取消撤回操作</string>
     <string name="can_not_recall">不是您发出的消息，不能撤回</string>
     <string name="bad_word_notice">您发送的消息包含脏话，已屏蔽</string>
+    <string name="hw1_image_view">hw1 image view</string>
 </resources>

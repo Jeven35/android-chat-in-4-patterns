@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Objects;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 import lombok.experimental.UtilityClass;
 import lombok.extern.java.Log;
@@ -59,6 +60,19 @@ public class Utils {
     // 简单地判断一个内容里有没有脏话
     public boolean containsBadWords(String content) {
         return content.contains("fuck");
+    }
+
+    // 判断一个text是否是图片的url
+    public boolean isPicUrl(String text){
+        //return true;
+        return Pattern.matches("!\\[.*\\]\\(.*\\)",text);
+    }
+
+    public String getMarkdownPicUrl(String text){
+        //return text;
+        text=text.split("\\(")[1];
+        text=text.split("\\)")[0];
+        return text;
     }
 
 }
